@@ -1,7 +1,7 @@
 import React from 'react'
 
 const PeticionApi = () => {
-    const[perosnajes, setPersonajes] = React.useState([])
+    const[personajes, setPersonajes] = React.useState([])
     const [paginacion, SetPaginacion] = React.useState(0)
     const traerPersonajes= async() =>{
         try{
@@ -28,7 +28,7 @@ const PeticionApi = () => {
        
         
          {
-             perosnajes.map(({id, name, image}) => (
+             personajes.map(({id, name, image}) => (
                  <div key={id}>
                      <h4>{id} - {name}</h4>
                      <img src={image} alt={name} />
